@@ -8,17 +8,15 @@ about: Create a report to help us improve
 
 A clear and concise description of what the bug is.
 
-## To Reproduce
+## Reproduction
 
-Steps to reproduce the behavior:
+Please provide a link to a minimal GitHub repo reproducing the issue or updating tests with relevant failing case.
+
+We might not be able to provide support otherwise. [Read why here](https://gist.github.com/Rich-Harris/88c5fc2ac6dc941b22e7996af05d70ff).
 
 ## Expected behavior
 
 A clear and concise description of what you expected to happen.
-
-## Link to repl or repo
-
-Please provide either a [repl.it demo](https://repl.it/languages/jest) or a minimal repository on GitHub.
 
 ## Run `npx envinfo --preset jest`
 

@@ -20,3 +20,4 @@ What changes might users need to make in their application due to this PR?
 
 - [ ] Tests for the changes have been added
 - [ ] Docs have been added / updated
+- [ ] Relevant [Changeset](https://github.com/changesets/changesets/blob/main/docs/adding-a-changeset.md) has been added

@@ -48,6 +48,7 @@
     "modulePathIgnorePatterns": [
       "__mocks__"
     ],
+    "collectCoverage": true,
     "coverageReporters": [
       "text",
       "lcov"

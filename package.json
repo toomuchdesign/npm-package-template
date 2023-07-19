@@ -11,6 +11,8 @@
   "scripts": {
     "build": "rimraf ./dist && tsc -p tsconfig.build.json",
     "test": "jest ./src",
+    "tag": "git tag v$(node -p \"require('./package.json').version\")",
+    "posttag": "git push --tags",
     "preversion": "npm run prepare",
     "version": "git add package.json",
     "postversion": "git push && git push --tags",

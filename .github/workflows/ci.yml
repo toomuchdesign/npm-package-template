@@ -9,7 +9,7 @@ env:
   CI: true
 
 jobs:
-  test_and_build:
+  test-and-build:
     name: 'Test and build'
     runs-on: ubuntu-latest
 
@@ -25,12 +25,22 @@ jobs:
       - run: npm test
       - run: npm run build
 
-  upload_code_coverage:
+      - uses: actions/upload-artifact@v3
+        with:
+          name: code-coverage
+          path: coverage
+
+  upload-code-coverage:
     name: 'Upload code coverage'
-    needs: ['test_and_build']
+    needs: ['test-and-build']
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/download-artifact@v3
+        with:
+          name: code-coverage
+          path: coverage
+
       - uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}

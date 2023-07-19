@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "@toomuchdesign/npm-package-template",
   "version": "0.0.0",
   "description": "",
   "main": "./dist/index.js",
@@ -24,7 +24,7 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/toomuchdesign/project-name.git"
+    "url": "git+https://github.com/toomuchdesign/npm-package-template.git"
   },
   "author": "Andrea Carraro <me@andreacarraro.it>",
   "license": "ISC",

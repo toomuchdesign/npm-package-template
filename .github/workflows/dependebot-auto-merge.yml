@@ -5,6 +5,7 @@ on:
 
 jobs:
   dependabot-auto-merge:
+    name: 'Dependabot auto merge'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

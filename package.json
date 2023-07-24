@@ -11,10 +11,12 @@
   "scripts": {
     "build": "rimraf ./dist && tsc -p tsconfig.build.json",
     "test": "jest ./src",
+    "tag": "git tag v$(node -p \"require('./package.json').version\")",
+    "posttag": "git push --tags",
     "preversion": "npm run prepare",
     "version": "git add package.json",
     "postversion": "git push && git push --tags",
-    "prepare": "npx simple-git-hooks",
+    "prepare": "npx simple-git-hooks && npm run source:check && npm run test && npm run build",
     "prettier:check": "prettier . --check",
     "prettier:fix": "npm run prettier:check -- --write",
     "type:check": "tsc --noEmit",

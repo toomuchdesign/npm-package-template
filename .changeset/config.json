@@ -8,5 +8,5 @@
   "baseBranch": "master",
   "updateInternalDependencies": "patch",
   "ignore": [],
-  "title": "chore: version package"
+  "title": "chore: release"
 }

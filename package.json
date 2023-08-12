@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "build": "rimraf ./dist && tsc -p tsconfig.build.json",
-    "test": "jest ./src",
+    "test": "vitest --config ./vitest.config.mts --dir ./src",
     "tag": "git tag v$(node -p \"require('./package.json').version\")",
     "posttag": "git push --tags",
     "preversion": "npm run prepare",
@@ -33,32 +33,14 @@
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
     "@tsconfig/node18": "^18.2.0",
-    "@types/jest": "^29.5.3",
-    "jest": "^29.6.2",
+    "@vitest/coverage-istanbul": "^0.34.1",
     "prettier": "^3.0.1",
     "rimraf": "^5.0.1",
     "simple-git-hooks": "^2.9.0",
-    "ts-jest": "^29.1.1",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "vitest": "^0.34.1"
   },
   "simple-git-hooks": {
-    "pre-commit": "npm run source:check && npm test"
-  },
-  "jest": {
-    "preset": "ts-jest",
-    "testEnvironmentOptions": {
-      "url": "http://localhost/"
-    },
-    "modulePathIgnorePatterns": [
-      "__mocks__"
-    ],
-    "collectCoverage": true,
-    "coverageReporters": [
-      "text",
-      "lcov"
-    ],
-    "setupFilesAfterEnv": [
-      "<rootDir>/jest.setup.ts"
-    ]
+    "pre-commit": "npm run source:check && npm test -- --run"
   }
 }

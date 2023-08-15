@@ -21,8 +21,7 @@
     "prettier:fix": "npm run prettier:check -- --write",
     "type:check": "tsc --noEmit",
     "source:check": "npm run prettier:check && npm run type:check",
-    "source:fix": "npm run prettier:fix",
-    "changeset:can:release": "npx changeset status --since=master"
+    "source:fix": "npm run prettier:fix"
   },
   "keywords": [],
   "repository": {

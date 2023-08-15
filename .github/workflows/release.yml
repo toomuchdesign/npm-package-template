@@ -25,6 +25,7 @@ jobs:
       - name: Create release pull request
         uses: changesets/action@v1
         with:
-          publish: npm run tag
+          # https://github.com/changesets/changesets/blob/main/docs/automating-changesets.md#blocking
+          publish: npx changeset status --since=master && npm run tag
         env:
           GITHUB_TOKEN: ${{ secrets.READ_AND_WRITE_TOKEN }}

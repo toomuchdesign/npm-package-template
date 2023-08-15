@@ -16,6 +16,10 @@ Add `READ_AND_WRITE_TOKEN` token:
 - Add the new repo to the `Read and write content` access token in: `User settigns` > `Developer Settings`
 - Create a `READ_AND_WRITE_TOKEN` secret for both `actions` and `dependabot` in `Repo settings` > `Secrets and variables` with the value of `Read and write content` access token
 
+Give `GITHUB_TOKEN` write permissions (for Coveralls to comment PRs):
+
+- `Repo settigns` > `Actions` > `General` > `Workflow permissions` > `Read and write permissions`
+
 ## Contributing
 
 Any contribution should be provided with a `changesets` update:

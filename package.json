@@ -38,7 +38,7 @@
     "rimraf": "^5.0.1",
     "simple-git-hooks": "^2.9.0",
     "typescript": "^5.1.6",
-    "vitest": "^0.34.1"
+    "vitest": "^0.34.2"
   },
   "simple-git-hooks": {
     "pre-commit": "npm run source:check && npm test -- --run"

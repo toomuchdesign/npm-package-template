@@ -32,7 +32,7 @@
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
     "@tsconfig/node18": "^18.2.2",
-    "@vitest/coverage-istanbul": "^0.34.4",
+    "@vitest/coverage-istanbul": "^0.34.6",
     "prettier": "^3.0.3",
     "rimraf": "^5.0.5",
     "simple-git-hooks": "^2.9.0",

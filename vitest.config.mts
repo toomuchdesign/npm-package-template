@@ -5,6 +5,7 @@ export default defineConfig({
     setupFiles: ['vitest.setup.mts'],
     coverage: {
       provider: 'istanbul',
+      include: ['src'],
       enabled: true,
       reporter: [['lcov', { projectRoot: './' }], ['text']],
     },

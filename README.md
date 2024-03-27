@@ -32,5 +32,5 @@ npx changeset
 [ci]: https://github.com/toomuchdesign/npm-package-template/actions/workflows/ci.yml
 [coveralls-badge]: https://coveralls.io/repos/github/toomuchdesign/npm-package-template/badge.svg?branch=master
 [coveralls]: https://coveralls.io/github/toomuchdesign/npm-package-template?branch=master
-[npm]: https://www.npmjs.com/package/npm-package-template
-[npm-version-badge]: https://img.shields.io/npm/v/npm-package-template.svg
+[npm]: https://www.npmjs.com/package/@toomuchdesign/npm-package-template
+[npm-version-badge]: https://img.shields.io/npm/v/@toomuchdesign/npm-package-template.svg

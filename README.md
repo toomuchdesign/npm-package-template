@@ -7,18 +7,9 @@
 ## Setup after fork
 
 - Fill `package.json` file with relevant fields
-- Enable [Changesets bot](https://github.com/changesets/bot) in [`User settigns > Applications`](https://github.com/settings/installations)
-
-### GitHub access tokens
-
-Add `READ_AND_WRITE_TOKEN` token:
-
-- Add the new repo to the `Read and write content` access token in: [`User settigns > Developer Settings > Personal access tokens > Fine-grained tokens`](https://github.com/settings/tokens?type=beta)
-- Create a `READ_AND_WRITE_TOKEN` secret for both [`actions`](https://github.com/toomuchdesign/__repo_name__/settings/secrets/actions) and [`dependabot`](https://github.com/toomuchdesign/__repo_name__/settings/secrets/dependabot) in `Repo settings > Secrets and variables` with the value of `Read and write content` access token
-
-Give `GITHUB_TOKEN` write permissions (for Coveralls to comment PRs):
-
-- [`Repo settigns > Actions > General > Workflow permissions > Read and write permissions`](https://github.com/toomuchdesign/__repo_name__/settings/actions)
+- Enable [Changesets bot](https://github.com/changesets/bot) in [`User settings > Applications`](https://github.com/settings/installations)
+- Enable `Allow GitHub Actions to create and approve pull requests` in [`Repo settings > Actions > General`](https://github.com/toomuchdesign/__repo_name__/settings/actions)
+- Configure Dependabot in [`Repo settings > Code security and analysis`](https://github.com/toomuchdesign/__repo_name__/settings/security_analysis)
 
 ## Contributing
 

@@ -7,9 +7,21 @@
 ## Setup after fork
 
 - Fill `package.json` file with relevant fields
-- Enable [Changesets bot](https://github.com/changesets/bot) in [`User settings > Applications`](https://github.com/settings/installations)
-- Enable `Allow GitHub Actions to create and approve pull requests` in [`Repo settings > Actions > General`](https://github.com/toomuchdesign/__repo_name__/settings/actions)
-- Configure Dependabot in [`Repo settings > Code security and analysis`](https://github.com/toomuchdesign/__repo_name__/settings/security_analysis)
+- [`User settings > Applications`](https://github.com/settings/installations):
+  - enable [Changesets bot](https://github.com/changesets/bot)
+- [`Repo settings > General`](https://github.com/toomuchdesign/__repo_name__/settings):
+  - check: `Allow auto-merge`
+  - check; `Automatically delete head branches`
+- [`Repo settings > Actions > General`](https://github.com/toomuchdesign/__repo_name__/settings/actions):
+  - check `Allow GitHub Actions to create and approve pull requests`
+- [`Repo settings > Code security and analysis`](https://github.com/toomuchdesign/__repo_name__/settings/security_analysis):
+  - Configure Dependabot
+- [`Repo settings > Branches`](https://github.com/toomuchdesign/__repo_name__/settings/branches), configure `master` branch protection rules:
+  - check `Require a pull request before merging`
+  - check `Require status checks to pass before merging`
+  - select required status checks:
+    - `Test and build`
+    - `Upload code coverage`
 
 ## Contributing
 

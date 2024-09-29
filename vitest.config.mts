@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitest/config';
+import { defineConfig, defaultInclude } from 'vitest/config';
 
 export default defineConfig({
   test: {
@@ -8,6 +8,10 @@ export default defineConfig({
       include: ['src'],
       enabled: true,
       reporter: [['lcov', { projectRoot: './' }], ['text']],
+    },
+    typecheck: {
+      enabled: true,
+      include: defaultInclude,
     },
   },
 });

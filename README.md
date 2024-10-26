@@ -7,8 +7,6 @@
 ## Setup after fork
 
 - Fill `package.json` file with relevant fields
-- [`User settings > Applications`](https://github.com/settings/installations):
-  - enable [Changesets bot](https://github.com/changesets/bot)
 - [`Repo settings > General`](https://github.com/toomuchdesign/__repo_name__/settings):
   - check: `Allow auto-merge`
   - check; `Automatically delete head branches`
@@ -22,6 +20,15 @@
   - select required status checks:
     - `Test and build`
     - `Upload code coverage`
+
+### Changesets release action
+
+- [`User settings > Applications`](https://github.com/settings/installations):
+  - enable [Changesets bot](https://github.com/changesets/bot)
+- [`User settigns > Developer Settings > Personal access tokens > Fine-grained tokens`](https://github.com/settings/tokens?type=beta)
+  - add the new repo to the `RELEASE_TOKEN` access token
+- [`Repo settings > Secrets and variables > Actions`](https://github.com/toomuchdesign/__repo_name__/settings/secrets/actions)
+  - create a new `RELEASE_TOKEN` repository secret with the value of `RELEASE_TOKEN` access token
 
 ## Contributing
 

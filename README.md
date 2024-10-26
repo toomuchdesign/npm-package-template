@@ -10,7 +10,8 @@
 - [`Repo settings > General`](https://github.com/toomuchdesign/__repo_name__/settings):
   - check: `Allow auto-merge`
   - check; `Automatically delete head branches`
-- [`Repo settings > Actions > General`](https://github.com/toomuchdesign/__repo_name__/settings/actions):
+- [`Repo settings > Actions > General > Workflow permissions`](https://github.com/toomuchdesign/__repo_name__/settings/actions):
+  - check `Read and write permissions`
   - check `Allow GitHub Actions to create and approve pull requests`
 - [`Repo settings > Code security and analysis`](https://github.com/toomuchdesign/__repo_name__/settings/security_analysis):
   - Configure Dependabot

@@ -32,7 +32,7 @@
   "author": "Andrea Carraro <me@andreacarraro.it>",
   "license": "ISC",
   "devDependencies": {
-    "@changesets/cli": "^2.27.9",
+    "@changesets/cli": "^2.27.10",
     "@tsconfig/node20": "^20.1.4",
     "@vitest/coverage-v8": "^2.1.5",
     "prettier": "^3.3.3",

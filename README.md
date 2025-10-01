@@ -30,6 +30,8 @@
   - add the new repo to the `RELEASE_TOKEN` access token
 - [`Repo settings > Secrets and variables > Actions`](https://github.com/toomuchdesign/__repo_name__/settings/secrets/actions)
   - create a new `RELEASE_TOKEN` repository secret with the value of `RELEASE_TOKEN` access token
+- [`NPM package page > Settings > Trusted Publisher`](https://www.npmjs.com/package/__package_name__/access)
+  - enable OIDC publishing on NPM ([docs](https://docs.npmjs.com/trusted-publishers))
 
 ## Contributing
 

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { hello } from '../index';
+import { hello } from '../src';
 
 describe('hello', () => {
   it('returns greeting', () => {

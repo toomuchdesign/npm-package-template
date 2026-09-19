@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { hello } from '../src';
+import { hello } from '../src/index.ts';
 
 describe('hello', () => {
   it('returns greeting', () => {

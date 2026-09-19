@@ -33,8 +33,8 @@
   "author": "Andrea Carraro <me@andreacarraro.it>",
   "license": "ISC",
   "devDependencies": {
-    "@changesets/changelog-github": "^0.7.0",
-    "@changesets/cli": "^2.31.1",
+    "@changesets/changelog-github": "^1.0.1",
+    "@changesets/cli": "^3.0.3",
     "@trivago/prettier-plugin-sort-imports": "^6.0.2",
     "@tsconfig/node24": "^24.0.5",
     "@types/node": "^24.13.6",

@@ -33,6 +33,14 @@
 - [`NPM package page > Settings > Trusted Publisher`](https://www.npmjs.com/package/__package_name__/access)
   - enable OIDC publishing on NPM ([docs](https://docs.npmjs.com/trusted-publishers))
 
+### Dry-run the release
+
+Validate that a release would succeed without publishing anything to NPM:
+
+- Open [`Actions > Release (dry run)`](https://github.com/toomuchdesign/__repo_name__/actions/workflows/release-dry-run.yml) and click `Run workflow`
+
+It runs `changeset publish-plan` (which packages/versions would be published) and `npm publish --dry-run` (builds and inspects the tarball contents). Neither command authenticates or uploads to NPM.
+
 ## Contributing
 
 Any contribution should be provided with a `changesets` update:

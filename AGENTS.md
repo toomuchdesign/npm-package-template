@@ -68,3 +68,7 @@ When changing the public API:
 - Add or update tests.
 - Ensure the build generates JavaScript and declaration files.
 - Document breaking changes explicitly.
+
+## Pull requests
+
+- PR titles should follow Conventional Commits.
